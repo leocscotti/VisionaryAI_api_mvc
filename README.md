@@ -1,4 +1,4 @@
-# VisionaryAI- api-mvc
+# VisionaryAI
 
 Projeto de API RESTful + MVC para o challenge sprint 3.
 
