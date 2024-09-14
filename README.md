@@ -187,3 +187,8 @@ Body:
 | Parâmetro | Tipo   | Descrição                                     |
 |:----------|:-------|:----------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id da cidade a ser excluído |
+
+
+## Link do vídeo explicativo 
+
+https://www.youtube.com/watch?v=WfvUFQM1mAk
