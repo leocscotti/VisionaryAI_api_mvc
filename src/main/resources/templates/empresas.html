@@ -1,0 +1,35 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html lang="pt-BR"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Empresas</title>
+</head>
+<body>
+<div th:fragment="listaEmpresas">
+    <h2>Lista de Empresas Registradas</h2>
+    <br/>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>CNPJ</th>
+            <th>Email</th>
+            <th>Situação</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="empresa : ${listaEmpresas}">
+            <td th:text="${empresa.getId()}">ID</td>
+            <td th:text="${empresa.getNome()}">Nome</td>
+            <td th:text="${empresa.getCnpj()}">CNPJ</td>
+            <td th:text="${empresa.getEmail()}">Email</td>
+            <td th:text="${empresa.getSituacao()}">Situação</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
