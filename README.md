@@ -101,10 +101,10 @@ Body:
 
 | Parâmetro | Tipo     | Descrição                          |
 |:----------|:---------|:-----------------------------------|
-| `cnpj`    | `String` | Cnpj da empresa a ser gravado   |
-| `email`   | `String` | E-mail da empresa a ser gravado |
-| `nome`   | `String` | Nome da empresa a ser gravado  |
-| `situacao` | `String` | Situacao da empresa a ser gravado  |
+| `cnpj`    | `String` | Cnpj da empresa a ser atualizado   |
+| `email`   | `String` | E-mail da empresa a ser atualizado |
+| `nome`   | `String` | Nome da empresa a ser atualizada  |
+| `situacao` | `String` | Situacao da empresa a ser atualizada  |
 
 #### Excluir empresa 
 
@@ -115,3 +115,75 @@ Body:
 | Parâmetro | Tipo   | Descrição                                     |
 |:----------|:-------|:----------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id da empresa a ser excluído |
+
+
+
+- #### Obter todas as cidades
+
+```http
+  GET /cidades
+```
+
+#### Obter cidade por id 
+
+```http
+  GET /cidades/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                    |
+|:----------|:-------|:---------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da cidade a ser buscado |
+
+#### Gravar cidade
+
+```http
+  POST /cidades
+```
+
+Body:
+
+```json
+{
+     "nome": "São Paulo",
+     "uf": "SP"
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `nome`   | `String` | Nome da cidade a ser gravado  |
+| `uf` | `String` | UF (Unidade da Federação) da cidade a ser gravado |
+
+#### Atualizar cidade
+
+```http
+  PUT /cidades/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                       |
+|:----------|:-------|:------------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da cidade a ser atualizado |
+
+Body:
+
+```json
+{
+     "nome": "São Paulo",
+     "uf": "SP"
+}
+```
+
+| Parâmetro | Tipo     | Descrição                       |
+|:----------|:---------|:--------------------------------|
+| `nome`   | `String` | Nome da cidade a ser atualizado  |
+| `uf` | `String` | UF (Unidade da Federação) da cidade a ser atualizado |
+
+#### Excluir cidade
+
+```http
+  DELETE /cidades/${id}
+```
+
+| Parâmetro | Tipo   | Descrição                                     |
+|:----------|:-------|:----------------------------------------------|
+| `id`      | `Long` | **Obrigatório**. Id da cidade a ser excluído |
