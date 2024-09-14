@@ -38,13 +38,13 @@ Projeto de API RESTful + MVC para o challenge sprint 3.
 
 - ## API Reference e endpoints
 
-- #### Obter todas as empresas (findAll empresaDTO)
+- #### Obter todas as empresas 
 
 ```http
   GET /empresas
 ```
 
-#### Obter empresa por id (findById empresaDTO)
+#### Obter empresa por id 
 
 ```http
   GET /empresas/${id}
@@ -54,7 +54,7 @@ Projeto de API RESTful + MVC para o challenge sprint 3.
 |:----------|:-------|:---------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id da empresa a ser buscado |
 
-#### Gravar empresa (save)
+#### Gravar empresa 
 
 ```http
   POST /empresas
@@ -64,9 +64,9 @@ Body:
 
 ```json
 {
-    "cnpj": "12345678912345",
-    "email": "exemplo@email.com",
-    "nome": "Exemplo",
+     "cnpj": "12345678900123",
+    "email": "plusoft@email.com",
+    "nome": "Plusoft",
     "situacao": "ativa"
 }
 ```
@@ -78,7 +78,7 @@ Body:
 | `nome`   | `String` | Nome da empresa a ser gravado  |
 | `situacao` | `String` | Situacao da empresa a ser gravado |
 
-#### Atualizar empresa (update)
+#### Atualizar empresa 
 
 ```http
   PUT /empresas/${id}
@@ -106,7 +106,7 @@ Body:
 | `nome`   | `String` | Nome da empresa a ser gravado  |
 | `situacao` | `String` | Situacao da empresa a ser gravado  |
 
-#### Excluir empresa (delete)
+#### Excluir empresa 
 
 ```http
   DELETE /empresas/${id}
