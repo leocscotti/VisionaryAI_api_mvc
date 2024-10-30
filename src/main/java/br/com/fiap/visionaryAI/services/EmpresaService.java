@@ -30,5 +30,14 @@ public class EmpresaService {
 
         return empresaResponse;
     }
+
+    public EmpresaRequest empresaToRequest(Empresa empresa) {
+        EmpresaRequest empresaRequest= new EmpresaRequest();
+        empresaRequest.setCnpj(empresa.getCnpj());
+        empresaRequest.setEmail(empresa.getEmail());
+        empresaRequest.setNome(empresaRequest.getNome());
+        empresaRequest.setSituacao(empresaRequest.getSituacao());
+        return empresaRequest;
+    }
 }
 
