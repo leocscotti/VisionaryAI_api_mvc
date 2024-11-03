@@ -57,7 +57,7 @@ Projeto de API RESTful + MVC para o challenge sprint 3.
 |:----------|:-------|:---------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id da empresa a ser buscado |
 
-#### Gravar empresa 
+- #### Gravar empresa 
 
 ```http
   POST /empresas
@@ -81,7 +81,7 @@ Body:
 | `nome`   | `String` | Nome da empresa a ser gravado  |
 | `situacao` | `String` | Situacao da empresa a ser gravado |
 
-#### Atualizar empresa 
+- #### Atualizar empresa 
 
 ```http
   PUT /empresas/${id}
@@ -109,7 +109,7 @@ Body:
 | `nome`   | `String` | Nome da empresa a ser atualizada  |
 | `situacao` | `String` | Situacao da empresa a ser atualizada  |
 
-#### Excluir empresa 
+- #### Excluir empresa 
 
 ```http
   DELETE /empresas/${id}
@@ -127,7 +127,7 @@ Body:
   GET /cidades
 ```
 
-#### Obter cidade por id 
+- #### Obter cidade por id 
 
 ```http
   GET /cidades/${id}
@@ -137,7 +137,7 @@ Body:
 |:----------|:-------|:---------------------------------------------|
 | `id`      | `Long` | **Obrigatório**. Id da cidade a ser buscado |
 
-#### Gravar cidade
+- #### Gravar cidade
 
 ```http
   POST /cidades
@@ -157,7 +157,7 @@ Body:
 | `nome`   | `String` | Nome da cidade a ser gravado  |
 | `uf` | `String` | UF (Unidade da Federação) da cidade a ser gravado |
 
-#### Atualizar cidade
+- #### Atualizar cidade
 
 ```http
   PUT /cidades/${id}
@@ -181,7 +181,7 @@ Body:
 | `nome`   | `String` | Nome da cidade a ser atualizado  |
 | `uf` | `String` | UF (Unidade da Federação) da cidade a ser atualizado |
 
-#### Excluir cidade
+- #### Excluir cidade
 
 ```http
   DELETE /cidades/${id}
@@ -194,4 +194,4 @@ Body:
 
 ## Link do vídeo explicativo 
 
-https://www.youtube.com/watch?v=WfvUFQM1mAk
+https://www.youtube.com/watch?v=6-tVU684k1o
