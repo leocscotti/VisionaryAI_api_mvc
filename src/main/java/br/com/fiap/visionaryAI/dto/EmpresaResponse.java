@@ -7,6 +7,7 @@ public class EmpresaResponse {
     private String email;
     private String nome;
     private String situacao;
+    private String message;
 
     public Long getId() {
         return id;
@@ -46,5 +47,13 @@ public class EmpresaResponse {
 
     public void setSituacao(String situacao) {
         this.situacao = situacao;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
